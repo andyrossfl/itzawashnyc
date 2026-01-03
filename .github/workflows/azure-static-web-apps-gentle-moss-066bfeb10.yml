@@ -12,6 +12,12 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
+    # === CRITICAL FIX: ADD THIS PERMISSIONS BLOCK ===
+    permissions:
+      id-token: write  # This grants permission for OIDC authentication
+      contents: read   # This is generally needed for the 'checkout' step
+    # ===============================================
+
       # This step is commented out and will not run
       # - name: Build site with a static site generator (e.g., Jekyll, Hugo)
       #   run: |
@@ -26,3 +32,4 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
+

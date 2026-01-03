@@ -18,3 +18,4 @@ jobs:
           action: "upload"
           app_location: "/"          # where your index.html lives
           output_location: ""        # blank for plain static HTML
+          skip_app_build: true

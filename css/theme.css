@@ -8591,3 +8591,15 @@ body .gm-style .gm-style-mtc div {
 	height: 386px;
 	margin-bottom: 35px;
 }
+
+/* Mobile background: applied only on small screens */
+@media only screen and (max-width: 768px) {
+	body {
+		background-image: url("../images/logo/iw-nyc-logo-dark.jpg");
+		background-size: cover;
+		background-position: center center;
+		background-repeat: no-repeat;
+		background-color: #171717; /* fallback color */
+		background-attachment: scroll; /* avoid fixed backgrounds on mobile */
+	}
+}

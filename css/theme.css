@@ -8592,14 +8592,20 @@ body .gm-style .gm-style-mtc div {
 	margin-bottom: 35px;
 }
 
-/* Mobile background: applied only on small screens */
+/* Mobile: replace large billboard hero with logo */
 @media only screen and (max-width: 768px) {
-	body {
-		background-image: url("../images/logo/iw-nyc-logo-dark.jpg");
-		background-size: cover;
-		background-position: center center;
-		background-repeat: no-repeat;
-		background-color: #171717; /* fallback color */
-		background-attachment: scroll; /* avoid fixed backgrounds on mobile */
+	/* Target the specific hero that uses the billboard image */
+	.aurel_js_bg_image[data-src="images/itza-wash-nyc-billboard_long.jpg"],
+	.aurel_js_bg_image[data-src$="billboard_long.jpg"] {
+		background-image: url("../images/logo/iw-nyc-logo-dark.jpg") !important;
+		background-size: contain !important;
+		background-position: center center !important;
+		background-repeat: no-repeat !important;
+		min-height: 220px !important; /* reduce vertical space on phones */
+	}
+	/* If the hero element gets an inline min-height from JS, this forces the mobile size */
+	.aurel_js_bg_image[data-src="images/itza-wash-nyc-billboard_long.jpg"] {
+		height: auto !important;
 	}
 }
+

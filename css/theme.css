@@ -8601,7 +8601,8 @@ body .gm-style .gm-style-mtc div {
 		background-size: cover !important;
 		background-position: center center !important;
 		background-repeat: no-repeat !important;
-		min-height: 220px !important; /* reduce vertical space on phones */
+		min-height: 420px !important; /* increased to avoid cropping on phones */
+		height: 420px !important;
 	}
 	/* If the hero element gets an inline min-height from JS, this forces the mobile size */
 	.aurel_js_bg_image[data-src="images/itza-wash-nyc-billboard_long.jpg"] {

@@ -8598,7 +8598,7 @@ body .gm-style .gm-style-mtc div {
 	.aurel_js_bg_image[data-src="images/itza-wash-nyc-billboard_long.jpg"],
 	.aurel_js_bg_image[data-src$="billboard_long.jpg"] {
 		background-image: url("../images/logo/iw-nyc-logo-dark.jpg") !important;
-		background-size: contain !important;
+		background-size: cover !important;
 		background-position: center center !important;
 		background-repeat: no-repeat !important;
 		min-height: 220px !important; /* reduce vertical space on phones */

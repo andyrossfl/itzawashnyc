@@ -8608,5 +8608,14 @@ body .gm-style .gm-style-mtc div {
 	.aurel_js_bg_image[data-src="images/itza-wash-nyc-billboard_long.jpg"] {
 		height: auto !important;
 	}
-}
 
+    /* Mobile: replace footer hero with mobile footer image */
+    .aurel_js_bg_image[data-src="images/nyc-footer-wash2.jpg"],
+    .aurel_js_bg_image[data-src$="nyc-footer-wash2.jpg"] {
+        background-image: url("../images/logo/iw-nyc-dark-footer-mobile.jpg") !important;
+        background-size: cover !important;
+        background-position: center center !important;
+        background-repeat: no-repeat !important;
+        min-height: 420px !important; /* increased to avoid cropping on phones */
+        height: auto !important;
+    }

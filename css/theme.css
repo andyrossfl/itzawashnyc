@@ -8616,6 +8616,6 @@ body .gm-style .gm-style-mtc div {
         background-size: cover !important;
         background-position: center center !important;
         background-repeat: no-repeat !important;
-        min-height: 420px !important; /* increased to avoid cropping on phones */
+        min-height: 600px !important; /* increased to avoid cropping on phones */
         height: auto !important;
     }
